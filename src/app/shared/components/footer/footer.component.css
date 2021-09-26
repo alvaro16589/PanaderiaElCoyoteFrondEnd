@@ -1,0 +1,24 @@
+
+.container-footer{
+    height:13%;
+    /*line-height:50px;*/
+    background:black;
+    color:white;
+    
+    position:relative;/*propiedad que pone el footer al final de la pagina*/
+    bottom:0;
+    left:0;
+    width:100%;
+  }
+  .title{
+    padding-left: 10%;
+    padding-top: 1%;
+    
+  }
+  .derechos{
+    text-align:center;
+  }
+  a{
+    text-decoration:underline;
+    color: white;
+  }
