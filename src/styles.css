@@ -4,8 +4,10 @@ html, body {
     height: 100%; 
 }
 body { 
+    background-image: url(assets/dist/image/bg.jpg) ;
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
+
 }
 .container{
     width: 100%;

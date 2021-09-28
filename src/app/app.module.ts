@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -24,7 +26,8 @@ import { CoreModule } from './core/core.module';
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
-    CoreModule
+    CoreModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

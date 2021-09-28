@@ -1,0 +1,26 @@
+mat-card{
+    margin: 1%;
+    background: rgba(0, 0, 0, 0.473);
+    color: white;
+    
+}
+mat-card-subtitle{
+        color: rgb(204, 203, 203);
+    }
+
+.crop-image{/*clase que hace el recorte de imagenes para que, queden iguales*/
+    height: 150px;
+    
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+img {
+     height: 337px;/* object-fit: cover;
+        /*position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        height: 80%;*/
+    }    

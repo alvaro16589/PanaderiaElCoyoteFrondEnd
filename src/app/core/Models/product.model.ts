@@ -9,4 +9,6 @@ export interface Product {
     idprecio: number;
     created_at: string;
     updated_at: string;
+    precio: string;
+    tipo: string;
   }
