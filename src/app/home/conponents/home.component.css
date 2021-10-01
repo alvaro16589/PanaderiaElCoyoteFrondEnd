@@ -129,12 +129,14 @@
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: rgba(255, 153, 153, 0.384);
+    /*background-color: rgba(255, 153, 153, 0.384);*/
+    background-image: url("/assets/dist/image/carrusel1.jpg");
     /*counter-increment: item;*/
   }
   
   .carousel__slide:nth-child(even) {
-    background-color: rgba(153, 153, 255, 0.514);
+    /*background-color: rgba(153, 153, 255, 0.514);*/
+    background-image: url("/assets/dist/image/carrusel3.jpg");
   }
   
   .carousel__slide:before {
@@ -153,6 +155,8 @@
     left: 0;
     width: 100%;
     height: 100%;
+    padding:30% 20% 0% 20%;
+    color:white;
     scroll-snap-align: center;
   }
   
