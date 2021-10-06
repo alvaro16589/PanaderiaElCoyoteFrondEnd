@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { Product }  from './../Models/product.model'
-
+import { Product, ProductSave }  from './../Models/product.model'
+import { environment } from './../../../environments/environment'
 @Injectable({
   providedIn: 'root'
 })
@@ -11,9 +11,12 @@ export class ProductosService {
     private http: HttpClient
   ) { }
   getAllProducts(){
-    return this.http.get<Product[]>('http://127.0.0.1:8000/api/producto');
+    return this.http.get<Product[]>(environment.url_api+'/producto');
   }
   getProduct(){
-    return this.http.get('http://127.0.0.1:8000/api/producto/${id}');
+    return this.http.get<Product>('${environment.url_api}/producto/${id}');
+  }
+  createProduct(product : ProductSave){
+    return this.http.post(environment.url_api+'/producto',product);
   }
 }

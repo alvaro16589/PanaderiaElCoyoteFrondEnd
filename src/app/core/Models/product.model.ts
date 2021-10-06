@@ -12,3 +12,12 @@ export interface Product {
     precio: string;
     tipo: string;
   }
+  export interface ProductSave {
+    nombre: string;
+    estado: string;
+    imagen: string;
+    descripcion: string;
+    cantidad: number,
+    idtipo: number;
+    idprecio: number;
+  }

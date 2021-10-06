@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
@@ -14,6 +15,10 @@ const routes: Routes = [
       {
         path: 'productos',
         loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule),
+      },
+      {
+        path: 'crear',
+        loadChildren: () => import('./crear-pan/crearpan.module').then(m => m.CrearpanModule),
       }
     ]
   }

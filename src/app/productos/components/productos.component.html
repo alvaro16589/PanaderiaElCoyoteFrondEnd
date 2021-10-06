@@ -7,20 +7,19 @@
                 </mat-card-title>
                 <mat-card-subtitle>
                     <b> {{ producto.tipo }} </b>
-                    <b>Cantidad :</b>  {{ producto.cantidad}}
+                    <b>Cantidad :</b> {{ producto.cantidad}}
                     <br>
-                   <h2> {{ producto.precio |  currency:'BOB':'symbol-narrow'}}</h2> 
+                    <h2> {{ producto.precio | currency:'BOB':'symbol-narrow'}}</h2>
                 </mat-card-subtitle>
-                
+
             </mat-card-header>
             <img class="crop-image" mat-card-image [src]="'assets/dist/image/'+ producto.imagen">
             <mat-card-content>
                 <b> Desc.: </b> {{ producto.descripcion}}
             </mat-card-content>
             <mat-card-actions>
-                acciones
+                <button mat-button (click)="crearProduct()"> Crear</button>
             </mat-card-actions>
-        </mat-card>    
-      
+        </mat-card>
     </div>
 </div>
