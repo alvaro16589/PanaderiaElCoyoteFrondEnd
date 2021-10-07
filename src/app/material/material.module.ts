@@ -8,6 +8,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { MatCardModule } from '@angular/material/card';
     MatDividerModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatBottomSheetModule
   ],
   exports:[
     //declarar los modulos a exportar, en favor de otros modulos
@@ -33,7 +41,11 @@ import { MatCardModule } from '@angular/material/card';
     MatDividerModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatBottomSheetModule
   ]
 })
 export class MaterialModule { }
