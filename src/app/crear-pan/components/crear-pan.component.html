@@ -1,12 +1,13 @@
 <mat-card class="card-form">
-    <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Crear nuevo Producto</mat-card-title>
-        <mat-card-subtitle>El ingreso de productos se hace por medio de estos formularios</mat-card-subtitle>
-    </mat-card-header>
-    <!--agregar alguna imagen aquí-->
-    <mat-card-content>
-        <form>
+    <form>
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Crear nuevo Producto</mat-card-title>
+            <mat-card-subtitle>El ingreso de productos se hace por medio de estos formularios</mat-card-subtitle>
+        </mat-card-header>
+        <!--agregar alguna imagen aquí-->
+        <mat-card-content>
+
             <mat-form-field appearance="fill">
                 <mat-label>Nombre</mat-label>
                 <input matInput placeholder="Nombre del produto" value="">
@@ -25,7 +26,9 @@
             </mat-form-field>
             <br>
             <input type="file"
-                style="padding: 5px; border-radius: 4px; margin-bottom: 2em; background-color: darkcyan;">
+                style="padding: 5px; border-radius: 4px; margin-bottom: 2em; background-color: darkcyan;"
+            >
+            
             <br>
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Descripción</mat-label>
@@ -34,7 +37,7 @@
             <br>
             <mat-form-field appearance="fill">
                 <mat-label>Cantidad</mat-label>
-                <input type="number" matInput  value="0" min="0" max="1000">
+                <input type="number" matInput value="0" min="0" max="1000">
             </mat-form-field>
             <br>
             <mat-form-field appearance="fill">
@@ -43,7 +46,7 @@
                     <mat-option *ngFor=" let tipo of tipos" [value]="tipo.id">
                         {{tipo.nombre}}
                     </mat-option>
-                    
+
                 </mat-select>
             </mat-form-field>
             <br>
@@ -52,13 +55,14 @@
                 <mat-select>
                     <mat-option *ngFor=" let precio of precios" [value]="precio.id">
                         {{precio.precio}}
-                    </mat-option>                    
+                    </mat-option>
                 </mat-select>
             </mat-form-field>
-        </form>
-    </mat-card-content>
-    <mat-card-actions>
-        <button mat-raised-button color="primary">Guardar</button>
-        <a mat-raised-button routerLink="">Volver al inicio</a>
-    </mat-card-actions>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="submit" mat-raised-button color="primary">Guardar</button>
+            <a mat-raised-button routerLink="">Volver al inicio</a>
+        </mat-card-actions>
+    </form>
 </mat-card>

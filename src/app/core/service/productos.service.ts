@@ -14,7 +14,7 @@ export class ProductosService {
     return this.http.get<Product[]>(environment.url_api+'/producto');
   }
   getProduct(){
-    return this.http.get<Product>('${environment.url_api}/producto/${id}');
+    return this.http.get<Product>(environment.url_api+'/producto/${id}');
   }
   createProduct(product : ProductSave){
     return this.http.post(environment.url_api+'/producto',product);

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tipo } from "./../../core/Models/tipo.model"
 import { Precio } from "./../../core/Models/precio.model"
+import { ProductSave } from "./../../core/Models/product.model"
 import { TipoService } from 'src/app/core/service/tipo.service';
 import { PrecioService } from 'src/app/core/service/precio.service';
 @Component({
@@ -11,6 +12,7 @@ import { PrecioService } from 'src/app/core/service/precio.service';
 export class CrearPanComponent implements OnInit {
   tipos: Tipo[] = [];
   precios: Precio[] = [];
+ // panS: ProductSave;
   constructor(
     private tipoService:TipoService,
     private precioService:PrecioService
@@ -24,7 +26,7 @@ export class CrearPanComponent implements OnInit {
     this.tipoService.getAllTypes().subscribe(
       tipo=>{
         this.tipos=tipo;
-        console.log(tipo);
+        //console.log(tipo);
       }
     )
   }
@@ -32,7 +34,7 @@ export class CrearPanComponent implements OnInit {
     this.precioService.getAllPrecios().subscribe(
       precio=>{
         this.precios=precio;
-        console.log(precio);
+        //console.log(precio);
       }
     )
   }
